@@ -1,0 +1,47 @@
+.container {
+  width: 80%;
+}
+
+/* Font */
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  background-image: url("../assets/Rectangle 10.png");
+}
+
+.header-banner {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrapper ul li a.active {
+  background-color: #fca311;
+  color: black;
+}
+
+.header-wrapper ul li a {
+  color: white;
+  font-weight: 700;
+  border-radius: 10%;
+}
+
+.header-wrapper ul li a:hover {
+  background-color: #fca311;
+  color: black;
+  transition: 800ms;
+}
+
+.header-wrapper ul {
+  gap: 20px;
+}
