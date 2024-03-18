@@ -96,3 +96,48 @@ header {
 .hero-content p span {
   display: block;
 }
+
+/* hero section 2 */
+.hero-section2 .container {
+  margin-left: -3px;
+  background-color: #fca311;
+  margin-right: 0px;
+  padding: 0px 0px 0px 256px;
+}
+.hero-section2 .leftSide {
+  background-color: #fca311;
+  width: 930px;
+  height: 218px;
+  padding: 50px 0px;
+}
+.hero-section2 .writeups {
+  width: 1000px;
+  padding: 0px 0px 0px 110px;
+}
+.hero-section2 .leftSide h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+.hero-section2 .leftSide h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.hero-section2 .rightSide {
+  background-color: #1f2324;
+  width: 930px;
+  height: 218px;
+  padding: 50px 0px;
+}
+.hero-section2 .rightSide p {
+  color: #fca311;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-content: right;
+  /* align-items: right; */
+}
+.hero-section2 .rightSide p span {
+  color: white;
+}
