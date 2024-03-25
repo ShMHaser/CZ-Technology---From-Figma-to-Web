@@ -316,3 +316,51 @@ header {
   height: 250px;
   gap: 5px;
 }
+
+/* Featured Projects */
+.section-contents .content-items {
+  position: relative;
+  padding-top: 40px;
+}
+.section-contents .content-items .writings {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 20px;
+  z-index: 2;
+}
+.section-contents .content-items .writings::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000074;
+  z-index: -1;
+}
+.section-contents .content-items .writings h5 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.section-contents .content-items .writings h4 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.section-contents .content-items .writings p {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.section-contents .content-items img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
