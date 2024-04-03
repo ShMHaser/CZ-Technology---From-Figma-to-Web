@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Font */
 .barlow-regular {
   font-family: "Barlow", sans-serif;
@@ -36,11 +42,24 @@
 header {
   background-image: url("../assets/Rectangle 10.png");
 }
-
+.header-color {
+  background-color: #0000004b;
+}
 .header-banner {
+  position: relative;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
+  z-index: 0;
+}
+.header-banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .header-wrapper ul li a.active {
@@ -52,12 +71,14 @@ header {
   color: white;
   font-weight: 700;
   border-radius: 10%;
+  z-index: 2;
 }
 
 .header-wrapper ul li a:hover {
   background-color: #fca311;
   color: black;
   transition: 800ms;
+  z-index: 2;
 }
 
 .header-wrapper ul {
@@ -71,7 +92,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 250px 0px 250px 0px;
-  z-index: -1;
+  z-index: 0;
 }
 .hero-section::after {
   position: absolute;
@@ -82,12 +103,12 @@ header {
   right: 0;
   background-color: black;
   opacity: 40%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-content h2 {
@@ -207,6 +228,7 @@ header {
   position: relative;
   margin: 20px 0px;
   text-align: center;
+  z-index: 0;
 }
 .whyus-content::before {
   position: absolute;
@@ -218,9 +240,13 @@ header {
   right: 0%;
   background-repeat: no-repeat;
   opacity: 10%;
+  z-index: 1;
 }
 
 .colcontent {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   padding: 40px 20px;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -248,8 +274,7 @@ header {
 /* Our Scope */
 .our-scope .writeUps {
   position: relative;
-  padding: 60px 10px 10px 10px;
-  width: 100%;
+  padding: 40px 10px 10px 10px;
   height: 100%;
   background-color: #fca311;
 }
@@ -267,33 +292,33 @@ header {
   font-size: 36px;
   line-height: 40px;
 }
-.our-scope .writeUps h2 {
+.our-scope .writeUps span {
   color: #000814;
   font-weight: 700;
   font-size: 64px;
   line-height: 75px;
 }
-.our-scope .writeUps h2 span {
+.our-scope .writeUps h2 {
   color: #ffffff;
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
 }
-.our-scope-all-contents {
-  width: 1100px;
-  align-content: center;
+.our-scope .writeUps p {
+  color: #000814;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
 }
-
 .our-scope-content .scopecontent {
   text-align: center;
-  padding-top: 20px;
   display: flex;
   height: 100%;
-  padding: 20px 20px 20px 20px;
-  margin-right: 0px;
   border: #fca311;
   border-radius: 5px;
   flex-direction: column;
   box-shadow: 1px 1px 5px 2px #fca311;
-  justify-content: center;
+  justify-content: space-between;
   gap: 5px;
 }
 .our-scope-content .scopecontent h4 {
@@ -311,10 +336,9 @@ header {
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
-.our-scope-content .scopecontent img {
-  width: 350px;
-  height: 250px;
-  gap: 5px;
+.learn-more-button {
+  padding: 80px 80px;
+  text-align: center;
 }
 
 /* Featured Projects */
@@ -363,4 +387,34 @@ header {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+.section-contents .more-project-button {
+  text-align: center;
+  padding: 30px 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.section-contents .more-project-button a {
+  text-decoration: none;
+  color: #fca311;
+}
+.section-contents .more-project-button a:hover {
+  border-bottom: 1px solid #fca311;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 300ms;
+}
+.section-contents .more-project-button span {
+  color: #1f2324;
+}
+
+/* Happy-clients */
+.happy-clients .back-image {
+  background-image: url("../assets/project numbers.jpeg");
+  width: 100%;
+  height: 311px;
+  /* top: 5169px; */
+  opacity: 78%;
 }
