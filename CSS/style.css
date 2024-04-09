@@ -46,20 +46,9 @@ header {
   background-color: #0000004b;
 }
 .header-banner {
-  position: relative;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  z-index: 0;
-}
-.header-banner::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
 }
 
 .header-wrapper ul li a.active {
@@ -71,14 +60,12 @@ header {
   color: white;
   font-weight: 700;
   border-radius: 10%;
-  z-index: 2;
 }
 
 .header-wrapper ul li a:hover {
   background-color: #fca311;
   color: black;
   transition: 800ms;
-  z-index: 2;
 }
 
 .header-wrapper ul {
@@ -397,24 +384,123 @@ header {
   text-decoration: none;
 }
 .section-contents .more-project-button a {
+  display: inline-block;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
   color: #fca311;
 }
 .section-contents .more-project-button a:hover {
   border-bottom: 1px solid #fca311;
-  border-radius: 3px;
-  display: inline-block;
-  transition: all 300ms;
 }
 .section-contents .more-project-button span {
   color: #1f2324;
 }
 
 /* Happy-clients */
-.happy-clients .back-image {
+.happy-clients {
+  position: relative;
+  padding: 80px 0px;
   background-image: url("../assets/project numbers.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.happy-clients::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0000004b;
+  z-index: 1;
+}
+.happy-clients .stat-contents {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 2;
+}
+.stat-contents .stats i {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fca311;
+}
+.stat-contents .stats h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fca311;
+}
+.stat-contents .stats p {
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+/* Get in touch */
+.get-in-touch {
+  position: relative;
+  padding: 80px 0;
+  background-image: url("../assets/get in touch.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  z-index: 1;
+}
+.get-in-touch::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.74) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: -1;
+}
+.get-in-touch .stars i {
+  color: #fca311;
+  padding-right: 4px;
+  z-index: 99;
+}
+.get-in-touch-heading h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #fca311;
+  text-transform: capitalize;
+}
+.get-in-touch-form-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.get-in-touch-form-items label {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+.get-in-touch-form-items input {
+  padding: 10px 30px 10px 10px;
+  border: 0px;
+  border-radius: 5px;
   width: 100%;
-  height: 311px;
-  /* top: 5169px; */
-  opacity: 78%;
+}
+.get-in-touch-form-items textarea {
+  padding: 12px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0px;
+  border-radius: 5px;
+}
+.get-in-touch-button a {
+  color: white;
 }
