@@ -181,7 +181,6 @@ header {
   font-size: 18px;
   line-height: 20px;
   align-content: right;
-  /* align-items: right; */
 }
 .hero-section2 .rightSide p span {
   color: white;
@@ -503,4 +502,41 @@ header {
 }
 .get-in-touch-button a {
   color: white;
+}
+
+/* Follow Us */
+.follow-us {
+  background-color: #3c3c3c;
+  padding: 30px 0px;
+}
+.follow-content {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+.follow-us .follow h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #fca311;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+.follow-us .follow h2 span {
+  color: white;
+}
+.follow-content .social-links ul {
+  margin-bottom: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.follow-content .social-links li {
+  border-left: 1px solid #fca311;
+}
+.follow-content .social-links i {
+  color: #fca311;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 35px;
 }
