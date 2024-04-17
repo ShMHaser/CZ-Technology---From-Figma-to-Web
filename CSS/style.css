@@ -540,3 +540,93 @@ header {
   padding-right: 70px;
   font-size: 35px;
 }
+
+/* Footer */
+footer {
+  background-color: #fca311;
+  padding: 20px 0px;
+}
+.footer-contents {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000814;
+}
+.footer-contents .cz-tech h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+.footer-contents .cz-tech h3 span {
+  color: black;
+}
+.footer-contents .cz-tech p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer-contents .usg-links h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.footer-contents .usg-links ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.footer-contents .usg-links ul li {
+  padding: 15px 15px 15px 0px;
+}
+.footer-contents .usg-links ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.copyright {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.58px;
+  letter-spacing: 0.255em;
+  text-align: center;
+}
+
+/* About Us */
+/* Hero Section 2 */
+.hero-heading {
+  position: relative;
+  background-image: url("../assets/About\ us\ header.jpeg");
+  padding: 200px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.hero-heading::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.74) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+.hero-heading .hero-heading-content h1 {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  z-index: 2;
+}
