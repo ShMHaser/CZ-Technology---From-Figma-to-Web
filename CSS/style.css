@@ -765,3 +765,98 @@ footer {
   font-size: 32px;
   line-height: 68px;
 }
+
+/* Contact Us */
+/* header */
+.contact-heading {
+  position: relative;
+  background-image: url("../assets/contactUsHeader.jpeg");
+  padding: 300px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.contact-heading::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.505) 0%,
+    rgba(0, 0, 0, 0.084) 100%
+  );
+  z-index: 1;
+}
+.contact-heading .contact-heading-content h1 {
+  position: relative;
+  padding: 0px 55px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  z-index: 2;
+}
+.contact-heading .contact-heading-content h1 span {
+  color: #fca311;
+}
+
+/* Get in touch */
+.touch .left-cont {
+  position: relative;
+  padding: 40px 10px 10px 10px;
+  height: 100%;
+  background-color: #fca311;
+  color: white;
+}
+.touch .left-cont::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: -10000px;
+  background-color: #fca311;
+}
+.touch .left-cont h5 {
+  padding: 10px 0px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.touch .left-cont p {
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.touch .right-cont h3 {
+}
+.touch .right-cont h3 {
+  padding: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000814;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+}
+.touch .right-cont h3 span {
+  color: #fca311;
+}
+.touch .right-cont p {
+  padding: 10px 220px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000814;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
