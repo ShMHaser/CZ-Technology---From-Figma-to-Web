@@ -672,7 +672,7 @@ footer {
 .people-image img {
   padding-top: 80px;
   height: 50%;
-  width: 150%;
+  width: 140%;
 }
 
 /* Mission & Vision */
@@ -727,8 +727,9 @@ footer {
 .mission-vision-contents .cartoon img {
   padding-top: 235px;
   height: 50%;
-  width: 150%;
+  width: 140%;
 }
+
 /* Authority Dialogue */
 .authority-dialogue .header {
   text-align: center;
