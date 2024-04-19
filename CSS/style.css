@@ -630,3 +630,137 @@ footer {
   line-height: 75px;
   z-index: 2;
 }
+/* About us */
+.about-us-content .header {
+  text-align: center;
+  padding-top: 20px;
+}
+.about-us-content .header h3 {
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.about-us-content .header h3 span {
+  color: #fca311;
+}
+.about-us-content .header p {
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.about-us-content .contents {
+  padding-top: 80px;
+}
+.about-us-content .contents .para {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about-us-content .contents p {
+  color: black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: justify;
+  padding-right: 40px;
+}
+.people-image img {
+  padding-top: 80px;
+  height: 50%;
+  width: 150%;
+}
+
+/* Mission & Vision */
+.mission-vision .header {
+  text-align: center;
+  padding-top: 50px;
+}
+.mission-vision .header h3 {
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.mission-vision .header h3 span {
+  color: #fca311;
+}
+.mission-vision .header p {
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.mission-vision-contents .mission {
+  padding: 60px 0px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  border: 1px solid #000814;
+}
+.mission-vision-contents .mission img {
+  height: 30%;
+  width: 30%;
+}
+.mission-vision-contents .mission h4 {
+  text-transform: uppercase;
+  color: #fca311;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 40px 0px;
+}
+.mission-vision-contents .mission p {
+  padding: 0px 15px;
+  color: #000814;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+.mission-vision-contents .cartoon img {
+  padding-top: 235px;
+  height: 50%;
+  width: 150%;
+}
+/* Authority Dialogue */
+.authority-dialogue .header {
+  text-align: center;
+  padding-top: 50px;
+}
+.authority-dialogue .header h3 {
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+}
+.authority-dialogue .header h3 span {
+  color: #fca311;
+}
+.authority-dialogue .header p {
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.authority-dialogue .para {
+  text-align: center;
+  padding-top: 50px;
+}
+.authority-dialogue .para p {
+  padding: 40px 0px;
+  text-transform: uppercase;
+  color: #1f2324;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 68px;
+}
