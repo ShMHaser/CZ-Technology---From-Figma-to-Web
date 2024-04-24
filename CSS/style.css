@@ -39,6 +39,37 @@
   font-style: normal;
 }
 
+/* Slider */
+button.slick-prev.slick-arrow {
+  left: 25px;
+  z-index: 20;
+}
+button.slick-prev.slick-arrow::before {
+  color: #fca311;
+}
+button.slick-next.slick-arrow {
+  right: 25px;
+  z-index: 20;
+}
+button.slick-next.slick-arrow::before {
+  color: #fca311;
+}
+ul.slick-dots {
+  bottom: 25px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 100;
+  color: #fca311;
+}
+.slick-dots li button:before {
+  opacity: 100;
+  color: white;
+  font-size: 10px;
+}
+
 header {
   background-image: url("../assets/Rectangle 10.png");
 }
@@ -46,14 +77,23 @@ header {
   background-color: #0000004b;
 }
 .header-banner {
-  padding: 20px 0;
   display: flex;
   justify-content: space-between;
+}
+.header-banner a img {
+  padding: 25px 0;
 }
 
 .header-wrapper ul li a.active {
   background-color: #fca311;
   color: black;
+}
+.header-wrapper ul li {
+  padding: 20px 0;
+  border-top: 3px solid transparent;
+}
+#bar-active {
+  border-top: 3px solid #fca311;
 }
 
 .header-wrapper ul li a {
@@ -79,7 +119,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 250px 0px 250px 0px;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-section::after {
   position: absolute;
@@ -90,7 +130,7 @@ header {
   right: 0;
   background-color: black;
   opacity: 40%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .hero-content {
@@ -808,6 +848,9 @@ footer {
 /* Get in touch */
 .touch .left-cont {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 40px 10px 10px 10px;
   height: 100%;
   background-color: #fca311;
@@ -837,7 +880,12 @@ footer {
   font-size: 18px;
   line-height: 20px;
 }
-.touch .right-cont h3 {
+.right-header {
+  padding: 0px 0px 50px 120px;
+}
+.touch .right-cont {
+  text-align: center;
+  padding: 50px 0px;
 }
 .touch .right-cont h3 {
   padding: 10px 0px;
@@ -859,4 +907,25 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+.touch .right-cont .right-form {
+  padding: 0px 0px 50px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+.touch .right-cont .right-form input {
+  padding: 20px 10px;
+  border: 2px solid #3c3c3c;
+  width: 100%;
+}
+.touch .right-cont .right-form textarea {
+  padding: 20px 10px;
+  resize: none;
+  border: 2px solid #3c3c3c;
+  width: 100%;
+}
+.sub-button {
+  padding-left: 120px;
 }
